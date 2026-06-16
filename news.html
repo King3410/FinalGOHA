@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Gate of Heaven Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="images/goha logo 4.png"
+            alt="Gate of Heaven Academy Logo"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            GATE OF HEAVEN ACADEMY
+            <span>kapag GOHA galing talagang magaling</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="news.html">News</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="news">
+      <!-- Updated Banner to Match Academics Hero Style -->
+      <div class="hero-overlay">
+        <img
+          src="images/btotb.png"
+          alt="Battle of the Brains"
+          class="hero-video"
+          style="object-fit: fill"
+        />
+      </div>
+
+      <div class="scroll-section-title">
+        P S O A C C &nbsp; C H A M P I O N S
+      </div>
+      <div class="scroll-wrapper" id="psoacc-champions-carousel">
+        <button
+          class="scroll-arrow left-arrow"
+          onclick="scrollPsoaccCarousel(-1)"
+        >
+          &#10094;
+        </button>
+
+        <div class="scroll-container">
+          <div class="scroll-item" onclick="openModal('images/News/1pso.jpg')">
+            <img src="images/News/1pso.jpg" alt="Champ 1" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/2pso.jpg')">
+            <img src="images/News/2pso.jpg" alt="Champ 2" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/3pso.jpg')">
+            <img src="images/News/3pso.jpg" alt="Champ 3" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/4pso.jpg')">
+            <img src="images/News/4pso.jpg" alt="Champ 4" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/5pso.jpg')">
+            <img src="images/News/5pso.jpg" alt="Champ 5" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/6pso.jpg')">
+            <img src="images/News/6pso.jpg" alt="Champ 6" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/7pso.jpg')">
+            <img src="images/News/7pso.jpg" alt="Champ 7" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/8pso.jpg')">
+            <img src="images/News/8pso.jpg" alt="Champ 8" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/9pso.jpg')">
+            <img src="images/News/9pso.jpg" alt="Champ 9" />
+          </div>
+
+          <div class="scroll-item" onclick="openModal('images/News/10pso.jpg')">
+            <img src="images/News/10pso.jpg" alt="Champ 10" />
+          </div>
+        </div>
+
+        <button
+          class="scroll-arrow right-arrow"
+          onclick="scrollPsoaccCarousel(1)"
+        >
+          &#10095;
+        </button>
+      </div>
+
+      <div class="scroll-section-title">
+        B A T T L E &nbsp; O F &nbsp; T H E &nbsp; B R A I N S &nbsp; C H A M P
+        I O N S
+      </div>
+      <div class="scroll-wrapper" id="brain-battle-carousel">
+        <button class="scroll-arrow left-arrow" onclick="scrollCarousel(-1)">
+          &#10094;
+        </button>
+        <div class="scroll-container">
+          <div class="scroll-item" onclick="openModal('images/news/11pso.jpg')">
+            <img src="images/news/11pso.jpg" alt="Brain 1" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/12pso.jpg')">
+            <img src="images/news/12pso.jpg" alt="Brain 2" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/15pso.jpg')">
+            <img src="images/news/15pso.jpg" alt="Brain 5" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/16pso.jpg')">
+            <img src="images/news/16pso.jpg" alt="Brain 6" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/17pso.jpg')">
+            <img src="images/news/17pso.jpg" alt="Brain 7" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/18pso.jpg')">
+            <img src="images/news/18pso.jpg" alt="Brain 8" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/19pso.jpg')">
+            <img src="images/news/19pso.jpg" alt="Brain 9" />
+          </div>
+          <div class="scroll-item" onclick="openModal('images/news/20pso.jpg')">
+            <img src="images/news/20pso.jpg" alt="Brain 20" />
+          </div>
+        </div>
+        <button class="scroll-arrow right-arrow" onclick="scrollCarousel(1)">
+          &#10095;
+        </button>
+      </div>
+
+      <div id="imageLightbox" class="modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="lightboxImg" alt="Enlarged View" />
+      </div>
+
+      <div class="scroll-section-title">V I D E O</div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>
+            <img
+              src="images/goha logo 4.png"
+              alt="Gate of Heaven Academy Logo"
+              style="
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background: #fff;
+                padding: 2px;
+                object-fit: contain;
+              "
+            />
+            Gate of Heaven Academy
+          </h4>
+          <ul class="footer-contact-list">
+            <li>Phase 1, Senate Village, Block 8 Lot 1,</li>
+            <li>Senate Ave. Congress, Caloocan,</li>
+            <li>1421 Metro Manila</li>
+            <li class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              0933 869 4110
+            </li>
+            <li class="contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              registrar@goha.edu.ph
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <path
+                d="M16 8h.01M16 12h.01M16 16h.01M8 8h4M8 12h4M8 16h4"
+              ></path>
+            </svg>
+            News & Events
+          </h4>
+          <ul>
+            <li><a href="news.html">Announcements</a></li>
+            <li><a href="news.html">Institutional Calendar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+              ></path>
+            </svg>
+            Academics
+          </h4>
+          <ul>
+            <li><a href="academics.html">Curriculum Overview</a></li>
+            <li><a href="academics.html">Student Achievements</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Admissions
+          </h4>
+          <ul>
+            <li><a href="admissions.html">Application Process</a></li>
+            <li><a href="admissions.html">Enrollment Timeline</a></li>
+            <li><a href="admissions.html">Scholarships & Grants</a></li>
+            <li><a href="admissions.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Affiliations
+          </h4>
+          <ul class="static-list">
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">FAPSA</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">CAPRIC</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">PSOACC</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              ></path>
+            </svg>
+            Media Channels
+          </h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/gohacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >YouTube</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter / X</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+          <a href="terms.html">Terms of Service</a>
+        </p>
+        <p>&copy; 2026 Gate of Heaven Academy. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div id="imageModal" class="modal" onclick="closeModal(event)">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
