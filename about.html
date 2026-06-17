@@ -13,7 +13,14 @@
           <img
             src="images/goha logo 4.png"
             alt="Gate of Heaven Academy Logo"
-            class="logo-img"
+            style="
+              height: 80px;
+              width: 80px;
+              border-radius: 50%;
+              background: #fff;
+              padding: 2px;
+              object-fit: contain;
+            "
           />
           <div class="logo-text">
             GATE OF HEAVEN ACADEMY
@@ -62,22 +69,34 @@
               <div
                 class="scroll-item"
                 onclick="openModal('images/About/classroom 2025.jpg')"
+                style="cursor: pointer"
               >
-                <img src="images/About/classroom 2025.jpg" alt="History 1" />
+                <img
+                  src="images/About/classroom 2025.jpg"
+                  alt="Classroom learning environment setup"
+                />
               </div>
 
               <div
                 class="scroll-item"
                 onclick="openModal('images/About/School.jpg')"
+                style="cursor: pointer"
               >
-                <img src="images/About/School.jpg" alt="History 2" />
+                <img
+                  src="images/About/School.jpg"
+                  alt="Gate of Heaven Academy school facade exterior"
+                />
               </div>
 
               <div
                 class="scroll-item"
                 onclick="openModal('images/About/1.jpg')"
+                style="cursor: pointer"
               >
-                <img src="images/About/1.jpg" alt="History 3" />
+                <img
+                  src="images/About/1.jpg"
+                  alt="School institutional history gallery landmark"
+                />
               </div>
             </div>
             <button class="scroll-arrow right-arrow">&#10095;</button>
@@ -88,20 +107,33 @@
       <div class="tabs-green-banner">
         <div class="about-box-container">
           <div class="about-sidebar">
-            <div id="tab-mission" onclick="switchAboutInfo('mission')">
+            <div
+              id="tab-mission"
+              onclick="switchAboutInfo('mission')"
+              style="cursor: pointer"
+            >
               Mission
             </div>
             <div
               id="tab-vision"
               class="active"
               onclick="switchAboutInfo('vision')"
+              style="cursor: pointer"
             >
               Vision
             </div>
-            <div id="tab-values" onclick="switchAboutInfo('values')">
+            <div
+              id="tab-values"
+              onclick="switchAboutInfo('values')"
+              style="cursor: pointer"
+            >
               Core Values
             </div>
-            <div id="tab-philosophy" onclick="switchAboutInfo('philosophy')">
+            <div
+              id="tab-philosophy"
+              onclick="switchAboutInfo('philosophy')"
+              style="cursor: pointer"
+            >
               School Philosophy
             </div>
           </div>
@@ -120,8 +152,19 @@
               making a positive impact on society and the world.
             </div>
             <div id="content-values" class="about-text-pane">
-              • Integrity<br />• Compassion<br />• Excellence<br />• Faith<br />•
-              Service to Others
+              <ul
+                style="
+                  list-style-type: disc;
+                  margin-left: 20px;
+                  padding-left: 0;
+                "
+              >
+                <li>Integrity</li>
+                <li>Compassion</li>
+                <li>Excellence</li>
+                <li>Faith</li>
+                <li>Service to Others</li>
+              </ul>
             </div>
             <div id="content-philosophy" class="about-text-pane">
               We believe that every child is a unique individual with God-given
@@ -217,7 +260,7 @@
                 d="M16 8h.01M16 12h.01M16 16h.01M8 8h4M8 12h4M8 16h4"
               ></path>
             </svg>
-            News & Events
+            News &amp; Events
           </h4>
           <ul>
             <li><a href="news.html">Announcements</a></li>
@@ -279,7 +322,7 @@
           <ul>
             <li><a href="admissions.html">Application Process</a></li>
             <li><a href="admissions.html">Enrollment Timeline</a></li>
-            <li><a href="admissions.html">Scholarships & Grants</a></li>
+            <li><a href="admissions.html">Scholarships &amp; Grants</a></li>
             <li><a href="admissions.html">Frequently Asked Questions</a></li>
           </ul>
         </div>
@@ -388,7 +431,11 @@
 
     <div id="imageLightbox" class="modal" onclick="closeModal(event)">
       <span class="close-modal">&times;</span>
-      <img class="modal-content" id="lightboxImg" />
+      <img
+        class="modal-content"
+        id="lightboxImg"
+        alt="Lightbox expanded view"
+      />
     </div>
 
     <script src="script.js"></script>

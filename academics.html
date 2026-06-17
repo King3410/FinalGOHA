@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Gate of Heaven Academy</title>
+    <title>Academics - Gate of Heaven Academy</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,7 +13,14 @@
           <img
             src="images/goha logo 4.png"
             alt="Gate of Heaven Academy Logo"
-            class="logo-img"
+            style="
+              height: 80px;
+              width: 80px;
+              border-radius: 50%;
+              background: #fff;
+              padding: 2px;
+              object-fit: contain;
+            "
           />
           <div class="logo-text">
             GATE OF HEAVEN ACADEMY
@@ -44,43 +51,70 @@
       <div class="scroll-section-title">
         S T U D E N T S &nbsp; A C H I E V E M E N T S
       </div>
+
       <div class="scroll-container">
         <div class="scroll-item" onclick="openModal('images/News/11pso.jpg')">
-          <img src="images/News/11pso.jpg" alt="Brain 1" />
+          <img
+            src="images/News/11pso.jpg"
+            alt="Gate of Heaven Academy students winning honors at the 11th PSO ceremony"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/12pso.jpg')">
-          <img src="images/News/12pso.jpg" alt="Brain 2" />
+          <img
+            src="images/News/12pso.jpg"
+            alt="Gate of Heaven Academy students holding certificates at the 12th PSO academic meet"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/15pso.jpg')">
-          <img src="images/News/15pso.jpg" alt="Brain 5" />
+          <img
+            src="images/News/15pso.jpg"
+            alt="Gate of Heaven Academy top achievers highlighted at the 15th PSO event"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/16pso.jpg')">
-          <img src="images/News/16pso.jpg" alt="Brain 6" />
+          <img
+            src="images/News/16pso.jpg"
+            alt="Gate of Heaven Academy delegation posing proudly with medals at the 16th PSO"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/17pso.jpg')">
-          <img src="images/News/17pso.jpg" alt="Brain 7" />
+          <img
+            src="images/News/17pso.jpg"
+            alt="Academic contest winners showcasing trophies at the 17th PSO competition"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/18pso.jpg')">
-          <img src="images/News/18pso.jpg" alt="Brain 8" />
+          <img
+            src="images/News/18pso.jpg"
+            alt="Gate of Heaven Academy elementary students celebrated at the 18th PSO finals"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/19pso.jpg')">
-          <img src="images/News/19pso.jpg" alt="Brain 9" />
+          <img
+            src="images/News/19pso.jpg"
+            alt="Award presentation group photo featuring GOHA students at the 19th PSO"
+          />
         </div>
         <div class="scroll-item" onclick="openModal('images/News/20pso.jpg')">
-          <img src="images/News/20pso.jpg" alt="Brain 20" />
+          <img
+            src="images/News/20pso.jpg"
+            alt="Milestone student achievements displayed at the 20th PSO anniversary meet"
+          />
         </div>
-      </div>
-      <div id="imageLightbox" class="modal" onclick="closeModal()">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="lightboxImg" alt="Enlarged View" />
       </div>
 
       <div class="downloads-grid" style="margin-top: 40px">
         <div class="download-item">
-          Download Here: <a href="#" download>Teacher's Profile</a>
+          Download Here:
+          <a href="downloads/teachers-profile.pdf" download
+            >Teacher's Profile</a
+          >
         </div>
         <div class="download-item">
-          Download Here: <a href="#" download>Assessment Overview</a>
+          Download Here:
+          <a href="downloads/assessment-overview.pdf" download
+            >Assessment Overview</a
+          >
         </div>
       </div>
     </main>
@@ -168,7 +202,7 @@
                 d="M16 8h.01M16 12h.01M16 16h.01M8 8h4M8 12h4M8 16h4"
               ></path>
             </svg>
-            News & Events
+            News &amp; Events
           </h4>
           <ul>
             <li><a href="news.html">Announcements</a></li>
@@ -230,7 +264,7 @@
           <ul>
             <li><a href="admissions.html">Application Process</a></li>
             <li><a href="admissions.html">Enrollment Timeline</a></li>
-            <li><a href="admissions.html">Scholarships & Grants</a></li>
+            <li><a href="admissions.html">Scholarships &amp; Grants</a></li>
             <li><a href="admissions.html">Frequently Asked Questions</a></li>
           </ul>
         </div>
@@ -337,9 +371,14 @@
       </div>
     </footer>
 
+    <!-- Simplified Modal Structure Linked to your Click Triggers -->
     <div id="imageModal" class="modal" onclick="closeModal(event)">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg" />
+      <span class="close-modal" onclick="closeModal(event)">&times;</span>
+      <img
+        class="modal-content"
+        id="modalImg"
+        alt="Enlarged achievement award perspective view"
+      />
     </div>
 
     <script src="script.js"></script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elementary Admissions - Gate of Heaven Academy</title>
+    <title>Admissions - Gate of Heaven Academy</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,7 +13,14 @@
           <img
             src="images/goha logo 4.png"
             alt="Gate of Heaven Academy Logo"
-            class="logo-img"
+            style="
+              height: 80px;
+              width: 80px;
+              border-radius: 50%;
+              background: #fff;
+              padding: 2px;
+              object-fit: contain;
+            "
           />
           <div class="logo-text">
             GATE OF HEAVEN ACADEMY
@@ -35,12 +42,11 @@
     </header>
 
     <main id="admissions">
-      <!-- ── Split Hero — now acts as tab navigation ── -->
       <div class="split-hero">
         <div
           id="hero-faqs"
           style="
-            background-image: url(&quot;https://images.contentstack.io/v3/assets/blta94287f64af734dc/bltfb7fee7ee635f06b/6799cd9f21aebd35b277df73/shutterstock_2198668123_DU.jpg?auto=webp&format=pjpg&quality=80&width=640&height=640&fit=crop&crop=640:480,smart&quot;);
+            background-image: url(&quot;https://images.contentstack.io/v3/assets/blta94287f64af734dc/bltfb7fee7ee635f06b/6799cd9f21aebd35b277df73/shutterstock_2198668123_DU.jpg?auto=webp&amp;format=pjpg&amp;quality=80&amp;width=640&amp;height=640&amp;fit=crop&amp;crop=640:480,smart&quot;);
             cursor: pointer;
           "
           class="hero-active"
@@ -52,7 +58,7 @@
         <div
           id="hero-elementary"
           style="
-            background-image: url(&quot;https://images.contentstack.io/v3/assets/blta94287f64af734dc/bltfb7fee7ee635f06b/6799cd9f21aebd35b277df73/shutterstock_2198668123_DU.jpg?auto=webp&format=pjpg&quality=80&width=640&height=640&fit=crop&crop=640:480,smart&quot;);
+            background-image: url(&quot;https://images.contentstack.io/v3/assets/blta94287f64af734dc/bltfb7fee7ee635f06b/6799cd9f21aebd35b277df73/shutterstock_2198668123_DU.jpg?auto=webp&amp;format=pjpg&amp;quality=80&amp;width=640&amp;height=640&amp;fit=crop&amp;crop=640:480,smart&quot;);
             cursor: pointer;
           "
           onclick="switchAdmTab('elementary')"
@@ -63,7 +69,7 @@
         <div
           id="hero-preschool"
           style="
-            background-image: url(&quot;https://media.istockphoto.com/id/1402700264/photo/teacher-with-a-group-of-elementary-students-playing-with-toy-blocks.jpg?s=612x612&w=0&k=20&c=VXOEyDfm5ZFbMjZ3Eu1Z62iigeI02SOg7IDmRb5jw3c=&quot;);
+            background-image: url(&quot;https://media.istockphoto.com/id/1402700264/photo/teacher-with-a-group-of-elementary-students-playing-with-toy-blocks.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=VXOEyDfm5ZFbMjZ3Eu1Z62iigeI02SOg7IDmRb5jw3c=&quot;);
             cursor: pointer;
           "
           onclick="switchAdmTab('preschool')"
@@ -72,14 +78,13 @@
         </div>
       </div>
 
-      <!-- ── FAQS PANEL ── -->
       <div id="panel-faqs" class="adm-panel active">
         <h2 class="faq-heading">FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
         <div class="faq-container">
           <div class="faq-image-col">
             <img
               src="images/faq.jpg"
-              alt="FAQ Illustration"
+              alt="Frequently Asked Questions customer service illustration"
               class="faq-illustration"
             />
           </div>
@@ -212,18 +217,18 @@
           </div>
         </div>
       </div>
-      <!-- ── ELEMENTARY PANEL ── -->
+
       <div id="panel-elementary" class="adm-panel">
         <div class="adm-info-row">
           <div class="adm-card">
             <h3>Tuition Fees</h3>
             <ul class="adm-tuition-list">
-              <li>Grade 1 <span>›</span></li>
-              <li>Grade 2 <span>›</span></li>
-              <li>Grade 3 <span>›</span></li>
-              <li>Grade 4 <span>›</span></li>
-              <li>Grade 5 <span>›</span></li>
-              <li>Grade 6 <span>›</span></li>
+              <li>Grade 1 <span>&rsaquo;</span></li>
+              <li>Grade 2 <span>&rsaquo;</span></li>
+              <li>Grade 3 <span>&rsaquo;</span></li>
+              <li>Grade 4 <span>&rsaquo;</span></li>
+              <li>Grade 5 <span>&rsaquo;</span></li>
+              <li>Grade 6 <span>&rsaquo;</span></li>
             </ul>
           </div>
           <div class="adm-card">
@@ -239,14 +244,12 @@
             <div class="adm-process-links">
               <span
                 >Download Here:
-                <a href="files/enrollment-form.pdf" download
-                  >Enrollment Form</a
-                ></span
-              >
+                <a href="files/enrollment-form.pdf" download>Enrollment Form</a>
+              </span>
               <span
                 >Register Here:
-                <a href="registration.html">Registration</a></span
-              >
+                <a href="registration.html">Registration</a>
+              </span>
             </div>
           </div>
         </div>
@@ -270,15 +273,14 @@
         </div>
       </div>
 
-      <!-- ── PRESCHOOL PANEL ── -->
       <div id="panel-preschool" class="adm-panel">
         <div class="adm-info-row">
           <div class="adm-card">
             <h3>Tuition Fees</h3>
             <ul class="adm-tuition-list">
-              <li>Nursery <span>›</span></li>
-              <li>Kinder <span>›</span></li>
-              <li>Prep <span>›</span></li>
+              <li>Nursery <span>&rsaquo;</span></li>
+              <li>Kinder <span>&rsaquo;</span></li>
+              <li>Prep <span>&rsaquo;</span></li>
             </ul>
           </div>
           <div class="adm-card">
@@ -294,14 +296,12 @@
             <div class="adm-process-links">
               <span
                 >Download Here:
-                <a href="files/enrollment-form.pdf" download
-                  >Enrollment Form</a
-                ></span
-              >
+                <a href="files/enrollment-form.pdf" download>Enrollment Form</a>
+              </span>
               <span
                 >Register Here:
-                <a href="registration.html">Registration</a></span
-              >
+                <a href="registration.html">Registration</a>
+              </span>
             </div>
           </div>
         </div>
@@ -409,7 +409,7 @@
                 d="M16 8h.01M16 12h.01M16 16h.01M8 8h4M8 12h4M8 16h4"
               ></path>
             </svg>
-            News & Events
+            News &amp; Events
           </h4>
           <ul>
             <li><a href="news.html">Announcements</a></li>
@@ -471,7 +471,7 @@
           <ul>
             <li><a href="admissions.html">Application Process</a></li>
             <li><a href="admissions.html">Enrollment Timeline</a></li>
-            <li><a href="admissions.html">Scholarships & Grants</a></li>
+            <li><a href="admissions.html">Scholarships &amp; Grants</a></li>
             <li><a href="admissions.html">Frequently Asked Questions</a></li>
           </ul>
         </div>
@@ -577,6 +577,7 @@
         <p>&copy; 2026 Gate of Heaven Academy. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

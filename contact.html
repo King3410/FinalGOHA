@@ -13,7 +13,14 @@
           <img
             src="images/goha logo 4.png"
             alt="Gate of Heaven Academy Logo"
-            class="logo-img"
+            style="
+              height: 80px;
+              width: 80px;
+              border-radius: 50%;
+              background: #fff;
+              padding: 2px;
+              object-fit: contain;
+            "
           />
           <div class="logo-text">
             GATE OF HEAVEN ACADEMY
@@ -33,6 +40,7 @@
         </nav>
       </div>
     </header>
+
     <main class="main-content" id="contact">
       <div class="contact-header-block">
         <div class="header-accent-line"></div>
@@ -44,16 +52,43 @@
             class="map-embed-container"
             style="height: 100%; min-height: 450px"
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.9619572635955!2d121.03197607590886!3d14.714856073615462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b05537555555%3A0x6b87635eb8cb9527!2sSenate%20Ave%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1717142400000!5m2!1sen!2sph"
-              width="100%"
-              height="100%"
-              style="border: 0; min-height: 450px; display: block"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+            <!-- Your Verified Gate of Heaven Academy Google Maps Pin Embed -->
+            <!-- The main card now behaves as a flex box directly, eliminating the nested container -->
+            <div
+              class="contact-card info-panel"
+              style="
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-height: 100%;
+                padding: 0 !important;
+                margin-top: 0 !important;
+                background: none !important;
+                border: none !important;
+                box-shadow: none !important;
+                webkit-box-shadow: none !important;
+              "
             >
-            </iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.9994623769622!2d121.03181320575048!3d14.759221283714748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1d3263fff9b%3A0xe5f5f37e5d999bef!2sGate%20of%20Heaven%20Academy%20of%20Senate%20Village%20Incorporated!5e0!3m2!1sen!2sph!4v1781658093596!5m2!1sen!2sph"
+                width="100%"
+                height="100%"
+                style="
+                  border: 0;
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  min-height: 650px;
+                  flex-grow: 1;
+                  border-radius: 4px;
+                "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Gate of Heaven Academy Campus Location Map"
+              >
+              </iframe>
+            </div>
           </div>
         </div>
 
@@ -202,7 +237,7 @@
                 d="M16 8h.01M16 12h.01M16 16h.01M8 8h4M8 12h4M8 16h4"
               ></path>
             </svg>
-            News & Events
+            News &amp; Events
           </h4>
           <ul>
             <li><a href="news.html">Announcements</a></li>
@@ -264,7 +299,7 @@
           <ul>
             <li><a href="admissions.html">Application Process</a></li>
             <li><a href="admissions.html">Enrollment Timeline</a></li>
-            <li><a href="admissions.html">Scholarships & Grants</a></li>
+            <li><a href="admissions.html">Scholarships &amp; Grants</a></li>
             <li><a href="admissions.html">Frequently Asked Questions</a></li>
           </ul>
         </div>
@@ -370,11 +405,6 @@
         <p>&copy; 2026 Gate of Heaven Academy. All Rights Reserved.</p>
       </div>
     </footer>
-
-    <div id="imageModal" class="modal" onclick="closeModal(event)">
-      <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg" alt="Enlarged review view" />
-    </div>
 
     <script src="script.js"></script>
   </body>
